@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+
+.header-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 60px;
+}
+
+.img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+.logo{
+    width: 100px;
+}
+
+.navbar-1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 400px;
+}
+
+ul,li{
+    display: flex;
+    gap: 30px;
+}
+
+.content_a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    color: green;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.content_a:hover{
+    color: rgb(18, 172, 18);
+}
+
+.content_a-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.content_a-1:hover{
+    color: rgb(18, 172, 18);
+}
+
+/* main */
+.main-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/img/Colombia-03-GQ-20Dec16_b.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    gap: 300px;
+}
+
+.contenedor-1{
+    display: grid;
+    place-items: center;
+}
+
+.form-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-right: 1px;
+}
+
+.h2-1{
+    color: wheat;
+    font-size: 3rem;
+    font-weight: 800;
+    width: 400px;
+}
+
+.parrafo-1{
+    color: white;
+    font-size: 1.2rem;
+    width: 400px;
+}
+
+.lupa{
+    position: absolute;
+    margin-left: 330px;
+    width: 50px;
+    background-color: rgb(28, 209, 28);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-1{
+    background-color: rgba(0, 0, 0, 0.623);
+    border-radius: 5px;
+    width: 400px;
+    height: 60px;
+    color: wheat;
+    border: none;
+}
+
+.imagen-1{
+    width: 250px;
+}
+
+/* section */
+.contenedor-3{
+    display: grid;
+    place-items: center;
+    margin-top: 80px;
+}
+
+.h3-1{
+    color: rgb(13, 182, 13);
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.h2-2{
+    color: black;
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.contenedor-4{
+    display: grid;
+    place-items: center;
+    margin-bottom: 50px;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    width: 80%;
+    max-width: 1000px;
+}
+
+.grid-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.grid-item p {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    margin: 0;
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 5px;
+}
+
+.lost-city {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+.tayrona {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.minca {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.guajira {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    align-self: end;
+}
+
+.contenedor-5{
+    display: grid;
+    place-items: center;
+    margin-bottom: 50px;
+}
+
+.View{
+    display: grid;
+    place-items: center;
+    background-color: rgb(49, 221, 49);
+    width: 120px;
+    text-align: center;
+    text-decoration: none;
+    height: 35px;
+    border-radius: 20px;
+    color: white;
+}
+
+.View:hover{
+    background-color: rgb(18, 172, 18);
+    color: wheat;
+}
+
+/* section carrusel */
+.section-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel {
+    position: relative;
+    max-width: 100px;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 1s ease;
+    width: 100%; /* Asumiendo que tienes 4 imágenes */
+}
+
+.slides img {
+    width: 100%;
+    flex: 1 0 100%;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0%); }
+    20% { transform: translateX(0%); }
+    25% { transform: translateX(-100%); }
+    45% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    70% { transform: translateX(-200%); }
+    75% { transform: translateX(-300%); }
+    95% { transform: translateX(-300%); }
+    100% { transform: translateX(0%); }
+}
+
+.slides {
+    animation: slide 16s infinite;
+}
+
+.imagenes-1{
+    width: 50px;
+}
+
+/* footer */
+.section-1{
+    background-color: #252927;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-9{
+    display: grid;
+    place-items: center;
+}
+
+.form-2{
+    margin-top: 20px;
+}
+
+.input-1{
+    position: absolute;
+    background-color: white;
+    border: none;
+    color: green;
+    border-radius: 10px;
+    height: 35px;
+    margin-top: 2px;
+    width: 150px;
+    margin-left: 229px;
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.input-2{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    width: 380px;
+    border: none;
+    height: 40px;
+    color: white;
+    background-color: grey;
+}
+
+.h2-3{
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 800;
+    width: 500px;
+}
+
+.parrado-2{
+    color: white;
+    font-size: 1rem;
+    width: 500px;
+}
+
+
+.whack{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    padding-left: 95%;
+    padding-bottom: 10px;
+}
+
+/* responsivo */
